@@ -1,0 +1,205 @@
+/* #000000;  колір тексту */
+/* #2196F3; колір наведення */
+/* #212121;  колір заголовків */
+/* #757575; другорядний колір тексту */
+/* #FFFFFF; білий колір, колір фону */ 
+/* rgba(255, 255, 255, 0.6); колір додатковий тексту   */
+
+:root {
+    --primery-text-color: #212121;
+    --secondary-text-color: #757575;
+    --acent-color: #2196F3; 
+    --white-color: #FFFFFF;
+    --logo-header-text: #000000;
+    --text-link-address: rgba(255, 255, 255, 0.6);
+    --background-footer: #2F303A;
+    --background-main: #F5F5F5;
+}  
+
+body {
+    background-color: var(--background-main);
+    color: var(--primery-text-color);
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;  
+}
+
+/* Шапка сторінки */
+.logo {
+    color: var(--logo-header-text);
+    
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;  
+}
+.logo-left {
+    color: var(--acent-color);
+}
+
+.nav-list {
+    list-style: none;
+}
+.nav-list .link {
+    color: var(--primery-text-color);
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.nav-list .link:hover,
+.nav-list .link:focus {
+    color: var(--acent-color);
+}
+.link.current {
+    color: var(--acent-color);
+}
+
+.header-contacts .link {
+    color: var(--secondary-text-color);
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+    color: var(--acent-color);
+}
+
+/* Головний матеріал */
+.hero-titel {
+    background-color: var(--background-footer);
+    color: var(--white-color);
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-button {
+    background-color: var(--acent-color);
+    color: var(--white-color);
+    border-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+
+/* Наші переваги */
+.features-list {
+    list-style: none;
+}
+.features-list-titel {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.features-list-text {
+    color: var(--secondary-text-color);
+
+    font-style: 14;
+    line-height: 1.71;
+}
+
+/* Чим ми займаємось  */
+.product-titel {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+.product-list {
+    list-style: none;
+}
+
+/* Наша команда */
+.team-titel {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+.team-list {
+    list-style: none;
+}
+.team-list-titel {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+.team-list-text {
+    color: var(--secondary-text-color);
+
+    font-style: 16;
+    line-height: 1.18;
+}
+
+/* Підвал сторінки */
+.footer {
+    background-color: var(--background-footer);
+}
+.footer .logo {
+    color: var(--white-color);
+}
+.address-list {
+    list-style: none; 
+}
+.address-list .link {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white-color);
+}
+.address-list .link:hover,
+.address-list .link:focus {
+    color: var(--acent-color);
+}
+.address-list .contact {
+    color: var(--text-link-address);
+}
+
+            /* ПОРТФОЛІО */
+.filter-list {
+    list-style: none;
+}
+.filter-list .button {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.filter-list .button:hover,
+.filter-list .button:focus {
+    background-color: var(--acent-color);
+    color: var(--white-color);  
+}
+.exsemples-list {
+    list-style: none;
+}
+.exsemples-list-titel {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.exsemples-list-text {
+    color: var(--secondary-text-color);
+    
+    font-size: 16px;
+    line-height: 1.87;
+}
