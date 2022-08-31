@@ -44,6 +44,8 @@ body {
     list-style: none;
 }
 .nav-list .link {
+    color: var(--primery-text-color);
+
     text-decoration: none;
     font-weight: 500;
     line-height: 1.14;
