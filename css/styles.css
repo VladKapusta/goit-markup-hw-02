@@ -6,22 +6,22 @@
 /* rgba(255, 255, 255, 0.6); колір додатковий тексту   */
 
 :root {
-    --primery-text-color: #212121;
-    --secondary-text-color: #757575;
+    --titel-color: #212121;
+    --text-color: #757575;
     --acent-color: #2196F3; 
     --white-color: #FFFFFF;
     --logo-header-text: #000000;
     --text-link-address: rgba(255, 255, 255, 0.6);
     --background-footer: #2F303A;
-    --background-main: #F5F5F5;
+    --background-team: #F5F5F5;
 }  
 
 body {
-    background-color: var(--background-main);
-    color: var(--primery-text-color);
+    color: var(--text-color);
 
     font-family: Roboto, sans-serif;
     font-size: 14px;
+    line-height: 1.71;
     font-weight: 400;
     letter-spacing: 0.03em;  
 }
@@ -44,7 +44,7 @@ body {
     list-style: none;
 }
 .nav-list .link {
-    color: var(--primery-text-color);
+    color: var(--titel-color);
 
     text-decoration: none;
     font-weight: 500;
@@ -60,7 +60,7 @@ body {
 }
 
 .header-contacts .link {
-    color: var(--secondary-text-color);
+    color: var(--text-color);
 
     text-decoration: none;
     font-weight: 500;
@@ -78,7 +78,6 @@ body {
     text-align: center;
 }
 .hero-titel {
-    
     color: var(--white-color);
     
     font-weight: 900;
@@ -93,6 +92,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
 
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -104,18 +104,17 @@ body {
     list-style: none;
 }
 .features-list-titel {
+    color: var(--titel-color);
+
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
 }
-.features-list-text {
-    color: var(--secondary-text-color);
-
-    line-height: 1.71;
-}
 
 /* Чим ми займаємось  */
 .product-titel {
+    color: var(--titel-color);
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -125,7 +124,12 @@ body {
 }
 
 /* Наша команда */
+.team {
+    background-color: var(--background-team);
+}
 .team-titel {
+    color: var(--titel-color);
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -134,13 +138,12 @@ body {
     list-style: none;
 }
 .team-list-titel {
+    color: var(--titel-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 }
 .team-list-text {
-    color: var(--secondary-text-color);
-
     font-size: 16px;
     line-height: 1.18;
 }
@@ -158,10 +161,8 @@ body {
 .address-list .link {
     text-decoration: none;
     font-style: normal;
-    line-height: 1.71;
     color: var(--white-color);
 }
-.address-list .link:hover,
 .address-list .link:focus {
     color: var(--acent-color);
 }
@@ -179,6 +180,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
 
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -194,14 +196,14 @@ body {
     list-style: none;
 }
 .exsemples-list-titel {
+    color: var(--titel-color);
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 .exsemples-list-text {
-    color: var(--secondary-text-color);
-    
     font-size: 16px;
     line-height: 1.87;
 }
